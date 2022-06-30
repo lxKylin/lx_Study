@@ -9,17 +9,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   setup() {
-    const transitionName = ref(null || "fade");
-    console.log(transitionName);
+    const transitionName = ref(null || 'fade')
+    console.log(transitionName)
 
     return {
-      transitionName,
-    };
-  },
-});
+      transitionName
+    }
+  }
+})
 </script>
 <style lang="less" scoped></style>

@@ -27,15 +27,15 @@
 }
 
 // Y-axis animation
-.slide-in(@y-begin, @y-end, @name){
-  @keyframes @name{
+.slide-in(@y-begin, @y-end, @name) {
+  @keyframes @name {
     from {
       transform: translateY(@y-begin);
-      opacity: 0
+      opacity: 0;
     }
     to {
       transform: translateY(@y-end);
-      opacity: 1
+      opacity: 1;
     }
   }
 }

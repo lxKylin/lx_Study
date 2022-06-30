@@ -4,7 +4,6 @@
       <img class="img" src="~@/assets/img/logo.svg" alt="logo" />
       <span v-show="!collapse" class="title">可视化后台管理</span>
     </div>
-    <!-- <Aside /> -->
     <Aside :routerList="routerList" />
   </div>
 </template>
@@ -12,16 +11,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import Aside from '@/components/aside'
+import Aside from '@/components/aside/index.vue'
 
-// import {
-//   Collection,
-//   Document,
-//   Menu as IconMenu,
-//   Setting
-// } from '@element-plus/icons-vue'
-
-// import { useRouter, useRoute } from 'vue-router'
 import { useRouter, useRoute } from 'vue-router'
 export default defineComponent({
   components: {
@@ -34,23 +25,12 @@ export default defineComponent({
     }
   },
   setup() {
-    // router
-    // const router = useRouter()
-    // const route = useRoute()
-    // // console.log(route.meta, '2222')
-    // // 事件树
-
     const router = useRouter()
     const route = useRoute()
-    // console.log(route, '22222')
     const routerList = router.options.routes[0].children
-
-    // console.log(routerList, 'router')
 
     return {
       routerList
-      // Setting,
-      // Collection
     }
   }
 })

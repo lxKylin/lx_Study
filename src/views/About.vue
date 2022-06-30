@@ -1,21 +1,22 @@
 <template>
   <div>
-    <h2>CMS模版</h2>
-    <h3>封装了可复用的侧边栏</h3>
+    <h1>步骤条</h1>
+    <HorizonTimeLine />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, reactive } from 'vue'
+import HorizonTimeLine from '@/components/horizon-time-line'
 
 export default defineComponent({
+  component: {
+    HorizonTimeLine
+  },
   setup() {
     return {}
   }
 })
 </script>
 
-<style lang="less" scoped>
-
-</style>
-
+<style lang="less" scoped></style>

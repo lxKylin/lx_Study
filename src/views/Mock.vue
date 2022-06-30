@@ -1,9 +1,7 @@
 <template>
   <div>
     <h2>Mockjs</h2>
-    <div @click="btnClick" class="btn">
-      测试mock
-    </div>
+    <div @click="btnClick" class="btn">测试mock</div>
   </div>
 </template>
 
@@ -15,14 +13,14 @@ import axios from 'axios'
 export default defineComponent({
   setup() {
     const btnClick = async () => {
-      const res = await axios.get("/user/list")
+      const res = await axios.get('/user/list')
       console.log(res.data.data)
     }
-    return {}
+    return {
+      btnClick
+    }
   }
 })
 </script>
 
-<style lang="less" scoped>
-
-</style>
+<style lang="less" scoped></style>

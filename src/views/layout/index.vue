@@ -45,22 +45,10 @@
 import { defineComponent, ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-import moment from "moment";
-// import { Message, Menu as IconMenu, Setting } from '@element-plus/icons-vue'
-
-import Aside from '@/components/aside/index.vue'
-// import BreadCrumb from "@components/breadCrumb/index.vue";
-
 export default defineComponent({
   name: 'App',
 
-  components: {
-    // Aside,
-    // // BreadCrumb,
-    // Message,
-    // IconMenu,
-    // Setting
-  },
+  components: {},
 
   setup() {
     const item = {

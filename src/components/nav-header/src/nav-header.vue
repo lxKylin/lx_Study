@@ -17,7 +17,7 @@ import { defineComponent, ref, reactive } from 'vue'
 import UserInfo from './user-info.vue'
 import LxBreadcrumb from '@/base-ui/breadcrumb'
 
-import { useStore } from '@/store'
+// import { useStore } from '@/store'
 
 export default defineComponent({
   components: {
@@ -34,7 +34,7 @@ export default defineComponent({
     }
 
     // 面包屑数据： [{name: , path: }]
-    const store = useStore()
+    // const store = useStore()
 
     const breadcrumbs = reactive([])
 
