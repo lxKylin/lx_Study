@@ -13,7 +13,7 @@ import { defineComponent } from 'vue'
 
 import Aside from '@/components/aside/index.vue'
 
-import { useRouter, useRoute } from 'vue-router'
+import { useRouter, useRoute, RouteRecordRaw } from 'vue-router'
 export default defineComponent({
   components: {
     Aside
@@ -27,7 +27,8 @@ export default defineComponent({
   setup() {
     const router = useRouter()
     const route = useRoute()
-    const routerList = router.options.routes[0].children
+    const routerList: RouteRecordRaw[] = router.options.routes[0].children!
+    console.log(routerList, 'routerList')
 
     return {
       routerList

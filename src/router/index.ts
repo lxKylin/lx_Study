@@ -8,7 +8,7 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: '/home',
-        name: 'home',
+        name: '网页置灰',
         meta: {
           icon: 'Message'
         },
@@ -53,12 +53,12 @@ const routes: Array<RouteRecordRaw> = [
         ]
       },
       {
-        path: '/fff',
-        name: 'Kylin',
+        path: '/water-mark',
+        name: '水印',
         meta: {
           icon: 'UserOutlined'
         },
-        component: () => import('@/views/Home.vue')
+        component: () => import('@/views/Water-Mark.vue')
       }
     ]
   },

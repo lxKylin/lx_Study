@@ -2,11 +2,13 @@
   <div>
     <h2>Mockjs</h2>
     <div @click="btnClick" class="btn">测试mock</div>
+    <img :src="test_img" alt="" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import test_img from '@/assets/image/test_img.jpeg'
 
 import axios from 'axios'
 
@@ -17,7 +19,8 @@ export default defineComponent({
       console.log(res.data.data)
     }
     return {
-      btnClick
+      btnClick,
+      test_img
     }
   }
 })

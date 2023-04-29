@@ -30,7 +30,8 @@ export default defineConfig({
   // 服务器设置
   server: {
     cors: true, // 默认启用并允许·任何源
-    // host: "0.0.0.0", // 指定服务器主机名
+    host: 'localhost', // 指定服务器主机名
+    // host: '0.0.0.0', // 指定服务器主机名
     port: fePort, // 指定服务端口号
     open: true, // 运行自动打开浏览器
     // https: false, // 关闭https

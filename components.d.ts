@@ -32,6 +32,7 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     Src: typeof import('./src/components/aside/src/index.vue')['default']
     UserInfo: typeof import('./src/components/nav-header/src/user-info.vue')['default']
+    Watermark: typeof import('./src/components/watermark.vue')['default']
   }
 }
 

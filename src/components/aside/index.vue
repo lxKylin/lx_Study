@@ -29,14 +29,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import { useRouter, useRoute } from 'vue-router'
+import { useRouter, useRoute,RouteRecordRaw } from 'vue-router'
 
 export default defineComponent({
   name: 'Aside',
   props: {
     // 数据列表,递归调用
     routerList: {
-      type: Array,
+      type: Array<RouteRecordRaw>,
       required: true
       // default: [],
     },
@@ -46,7 +46,7 @@ export default defineComponent({
       default: '1'
     }
   },
-  setup() {
+  setup(props) {
     const router = useRouter()
     const route = useRoute()
 
